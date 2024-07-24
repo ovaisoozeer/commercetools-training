@@ -1,0 +1,26 @@
+{
+    "name": "Pants Bundle",
+    "description": "this is the ProductType that contains the actual bundle",
+    "attributes": [
+      {
+        "type": {
+          "name": "reference",
+          "referenceTypeId": "product"
+        },
+        "name": "pants1",
+        "label": { "en": "Pants 1" },
+        "isRequired": true,
+        "isSearchable": true
+      },
+      {
+        "type": {
+          "name": "reference",
+          "referenceTypeId": "product"
+        },
+        "name": "pants2",
+        "label": { "en": "Pants 2" },
+        "isRequired": true,
+        "isSearchable": true
+      }
+    ]
+  }

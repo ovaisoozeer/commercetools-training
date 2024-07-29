@@ -1,0 +1,15 @@
+{
+  "container": "ovaisoozeer_exfa_training/custom-objects",
+  "key": "returnsPolicy",
+  "value": {
+    "returnPolicy": {
+      "de": "Returns policy text goes here",
+      "en": "Returns policy text goes here"
+    },
+    "product":
+    {
+      "typeId": "product-type",
+      "id": "fa3fcd24-60d5-43a5-90ef-007d7d321b79"
+    }
+  }
+}

@@ -1,15 +1,536 @@
 {
-  "container": "ovaisoozeer_exfa_training/custom-objects",
-  "key": "returnsPolicy",
-  "value": {
-    "returnPolicy": {
-      "de": "Returns policy text goes here",
-      "en": "Returns policy text goes here"
-    },
-    "product":
-    {
-      "typeId": "product-type",
-      "id": "fa3fcd24-60d5-43a5-90ef-007d7d321b79"
+  "1 create custom object": {
+    "container": "ovaisoozeer_exfa_training_custom-objects",
+    "key": "pants-1-returns-policy",
+    "value": {
+      "policyDescription": {
+        "de": "Policy description text DE",
+        "en": "Policy description text EN"
+      },
+      "validityInDaysAfterSale": 30
     }
+  },
+  "1 result": {
+    "limit": 20,
+    "offset": 0,
+    "count": 1,
+    "total": 1,
+    "results": [
+      {
+        "id": "e458b22b-a77c-46dc-a65a-6af1f609e691",
+        "version": 1,
+        "versionModifiedAt": "2024-07-31T12:59:37.585Z",
+        "createdAt": "2024-07-31T12:59:37.585Z",
+        "lastModifiedAt": "2024-07-31T12:59:37.585Z",
+        "lastModifiedBy": {
+          "isPlatformClient": true,
+          "user": {
+            "typeId": "user",
+            "id": "598646eb-4c60-4a04-815d-9aa629324946"
+          }
+        },
+        "createdBy": {
+          "isPlatformClient": true,
+          "user": {
+            "typeId": "user",
+            "id": "598646eb-4c60-4a04-815d-9aa629324946"
+          }
+        },
+        "container": "ovaisoozeer_exfa_training_custom-objects",
+        "key": "pants-1-returns-policy",
+        "value": {
+          "policyDescription": {
+            "de": "Policy description text DE",
+            "en": "Policy description text EN"
+          },
+          "validityInDaysAfterSale": 30
+        }
+      }
+    ]
+  },
+  "FASHION": {
+    "limit": 20,
+    "offset": 0,
+    "count": 1,
+    "total": 1,
+    "results": [
+      {
+        "id": "fa3fcd24-60d5-43a5-90ef-007d7d321b79",
+        "version": 6,
+        "versionModifiedAt": "2024-07-23T14:18:09.491Z",
+        "createdAt": "2024-07-23T14:07:02.149Z",
+        "lastModifiedAt": "2024-07-23T14:18:09.491Z",
+        "lastModifiedBy": {
+          "isPlatformClient": true,
+          "user": {
+            "typeId": "user",
+            "id": "598646eb-4c60-4a04-815d-9aa629324946"
+          }
+        },
+        "createdBy": {
+          "isPlatformClient": true,
+          "user": {
+            "typeId": "user",
+            "id": "598646eb-4c60-4a04-815d-9aa629324946"
+          }
+        },
+        "name": "Fashion",
+        "description": "Fashion products",
+        "classifier": "Complex",
+        "attributes": [
+          {
+            "name": "attribute-1",
+            "label": {
+              "de-DE": "attribute-1",
+              "en-GB": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "inputTip": {
+              "de-DE": "attribute-1",
+              "en-GB": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "isRequired": false,
+            "type": {
+              "name": "ltext"
+            },
+            "attributeConstraint": "None",
+            "isSearchable": true,
+            "inputHint": "MultiLine",
+            "displayGroup": "Other"
+          },
+          {
+            "name": "attr-2",
+            "label": {
+              "de-DE": "attr-2",
+              "en-GB": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "inputTip": {
+              "de-DE": "attr-2",
+              "en-GB": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "isRequired": false,
+            "type": {
+              "name": "number"
+            },
+            "attributeConstraint": "Unique",
+            "isSearchable": true,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+          },
+          {
+            "name": "attr-3",
+            "label": {
+              "de-DE": "attr-3",
+              "en-GB": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "inputTip": {
+              "de-DE": "attr-3",
+              "en-GB": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "isRequired": false,
+            "type": {
+              "name": "boolean"
+            },
+            "attributeConstraint": "SameForAll",
+            "isSearchable": true,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+          },
+          {
+            "name": "attr-4",
+            "label": {
+              "de-DE": "attr-4",
+              "en-GB": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "inputTip": {
+              "de-DE": "attr-4",
+              "en-GB": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "isRequired": false,
+            "type": {
+              "name": "number"
+            },
+            "attributeConstraint": "CombinationUnique",
+            "isSearchable": true,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+          },
+          {
+            "name": "attr-5",
+            "label": {
+              "de-DE": "attr-5",
+              "en-GB": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "inputTip": {
+              "de-DE": "attr-5",
+              "en-GB": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "isRequired": true,
+            "type": {
+              "name": "datetime"
+            },
+            "attributeConstraint": "None",
+            "isSearchable": false,
+            "inputHint": "SingleLine",
+            "displayGroup": "Other"
+          }
+        ]
+      }
+    ]
+  },
+  "2 Add custom object as an attribute reference to the product type": {
+    "version": 6,
+    "actions": [
+      {
+        "action": "addAttributeDefinition",
+        "attribute": {
+          "type": {
+            "name": "reference",
+            "referenceTypeId": "key-value-document"
+          },
+          "name": "pants-1-returns-policy",
+          "label": {
+            "de": "Returns policy label DE",
+            "en": "Returns policy label EN"
+          },
+          "isRequired": false,
+          "attributeConstraint": "SameForAll"
+        }
+      }
+    ]
+  },
+  "UPDATED PRODUCT TYPE": {
+    "id": "fa3fcd24-60d5-43a5-90ef-007d7d321b79",
+    "version": 7,
+    "versionModifiedAt": "2024-07-31T13:50:46.982Z",
+    "createdAt": "2024-07-23T14:07:02.149Z",
+    "lastModifiedAt": "2024-07-31T13:50:46.982Z",
+    "lastModifiedBy": {
+      "isPlatformClient": true,
+      "user": {
+        "typeId": "user",
+        "id": "598646eb-4c60-4a04-815d-9aa629324946"
+      }
+    },
+    "createdBy": {
+      "isPlatformClient": true,
+      "user": {
+        "typeId": "user",
+        "id": "598646eb-4c60-4a04-815d-9aa629324946"
+      }
+    },
+    "name": "Fashion",
+    "description": "Fashion products",
+    "classifier": "Complex",
+    "attributes": [
+      {
+        "name": "attribute-1",
+        "label": {
+          "de-DE": "attribute-1",
+          "en-GB": "",
+          "en-US": "",
+          "fr": ""
+        },
+        "inputTip": {
+          "de-DE": "attribute-1",
+          "en-GB": "",
+          "en-US": "",
+          "fr": ""
+        },
+        "isRequired": false,
+        "type": {
+          "name": "ltext"
+        },
+        "attributeConstraint": "None",
+        "isSearchable": true,
+        "inputHint": "MultiLine",
+        "displayGroup": "Other"
+      },
+      {
+        "name": "attr-2",
+        "label": {
+          "de-DE": "attr-2",
+          "en-GB": "",
+          "en-US": "",
+          "fr": ""
+        },
+        "inputTip": {
+          "de-DE": "attr-2",
+          "en-GB": "",
+          "en-US": "",
+          "fr": ""
+        },
+        "isRequired": false,
+        "type": {
+          "name": "number"
+        },
+        "attributeConstraint": "Unique",
+        "isSearchable": true,
+        "inputHint": "SingleLine",
+        "displayGroup": "Other"
+      },
+      {
+        "name": "attr-3",
+        "label": {
+          "de-DE": "attr-3",
+          "en-GB": "",
+          "en-US": "",
+          "fr": ""
+        },
+        "inputTip": {
+          "de-DE": "attr-3",
+          "en-GB": "",
+          "en-US": "",
+          "fr": ""
+        },
+        "isRequired": false,
+        "type": {
+          "name": "boolean"
+        },
+        "attributeConstraint": "SameForAll",
+        "isSearchable": true,
+        "inputHint": "SingleLine",
+        "displayGroup": "Other"
+      },
+      {
+        "name": "attr-4",
+        "label": {
+          "de-DE": "attr-4",
+          "en-GB": "",
+          "en-US": "",
+          "fr": ""
+        },
+        "inputTip": {
+          "de-DE": "attr-4",
+          "en-GB": "",
+          "en-US": "",
+          "fr": ""
+        },
+        "isRequired": false,
+        "type": {
+          "name": "number"
+        },
+        "attributeConstraint": "CombinationUnique",
+        "isSearchable": true,
+        "inputHint": "SingleLine",
+        "displayGroup": "Other"
+      },
+      {
+        "name": "attr-5",
+        "label": {
+          "de-DE": "attr-5",
+          "en-GB": "",
+          "en-US": "",
+          "fr": ""
+        },
+        "inputTip": {
+          "de-DE": "attr-5",
+          "en-GB": "",
+          "en-US": "",
+          "fr": ""
+        },
+        "isRequired": true,
+        "type": {
+          "name": "datetime"
+        },
+        "attributeConstraint": "None",
+        "isSearchable": false,
+        "inputHint": "SingleLine",
+        "displayGroup": "Other"
+      },
+      {
+        "name": "pants-1-returns-policy",
+        "label": {
+          "de": "Returns policy label DE",
+          "en": "Returns policy label EN"
+        },
+        "isRequired": false,
+        "type": {
+          "name": "reference",
+          "referenceTypeId": "key-value-document"
+        },
+        "attributeConstraint": "SameForAll",
+        "isSearchable": true,
+        "inputHint": "SingleLine",
+        "displayGroup": "Other"
+      }
+    ]
+  },
+  "PANTS-1": {
+    "limit": 20,
+    "offset": 0,
+    "count": 1,
+    "total": 1,
+    "results": [
+      {
+        "id": "ab4d5183-a7d0-47b2-9041-de9153214401",
+        "version": 11,
+        "versionModifiedAt": "2024-07-24T14:19:20.263Z",
+        "lastMessageSequenceNumber": 4,
+        "createdAt": "2024-07-23T14:08:50.260Z",
+        "lastModifiedAt": "2024-07-24T14:19:20.263Z",
+        "lastModifiedBy": {
+          "isPlatformClient": true,
+          "user": {
+            "typeId": "user",
+            "id": "598646eb-4c60-4a04-815d-9aa629324946"
+          }
+        },
+        "createdBy": {
+          "isPlatformClient": true,
+          "user": {
+            "typeId": "user",
+            "id": "598646eb-4c60-4a04-815d-9aa629324946"
+          }
+        },
+        "productType": {
+          "typeId": "product-type",
+          "id": "fa3fcd24-60d5-43a5-90ef-007d7d321b79"
+        },
+        "masterData": {
+          "current": {
+            "name": {
+              "de-DE": "pants-1"
+            },
+            "description": {
+              "de-DE": "pants-1"
+            },
+            "categories": [],
+            "categoryOrderHints": {},
+            "slug": {
+              "de-DE": "pants-1"
+            },
+            "metaTitle": {
+              "en-GB": "",
+              "de-DE": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "metaDescription": {
+              "en-GB": "",
+              "de-DE": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "masterVariant": {
+              "id": 1,
+              "prices": [],
+              "images": [],
+              "attributes": [],
+              "assets": []
+            },
+            "variants": [],
+            "searchKeywords": {}
+          },
+          "staged": {
+            "name": {
+              "de-DE": "pants-1"
+            },
+            "description": {
+              "de-DE": "pants-1"
+            },
+            "categories": [
+              {
+                "typeId": "category",
+                "id": "45d862e4-f358-4bf3-92bd-6a003f1b0c37"
+              },
+              {
+                "typeId": "category",
+                "id": "205cbc3b-c13c-4aab-8637-8cc123fadb9f"
+              },
+              {
+                "typeId": "category",
+                "id": "6178ff36-a3a7-4062-bed8-19dacb91ac60"
+              }
+            ],
+            "categoryOrderHints": {},
+            "slug": {
+              "de-DE": "pants-1"
+            },
+            "metaTitle": {
+              "en-GB": "",
+              "de-DE": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "metaDescription": {
+              "en-GB": "",
+              "de-DE": "",
+              "en-US": "",
+              "fr": ""
+            },
+            "masterVariant": {
+              "id": 1,
+              "prices": [],
+              "images": [],
+              "attributes": [
+                {
+                  "name": "attribute-1",
+                  "value": {
+                    "de-DE": "a\nt\nt\nr"
+                  }
+                },
+                {
+                  "name": "attr-2",
+                  "value": 3
+                },
+                {
+                  "name": "attr-4",
+                  "value": 3
+                },
+                {
+                  "name": "attr-5",
+                  "value": "2024-07-22T23:00:00.000Z"
+                },
+                {
+                  "name": "attr-3",
+                  "value": true
+                }
+              ],
+              "assets": []
+            },
+            "variants": [],
+            "searchKeywords": {}
+          },
+          "published": false,
+          "hasStagedChanges": true
+        },
+        "key": "pants-1",
+        "priceMode": "Embedded",
+        "lastVariantId": 1
+      }
+    ]
+  },
+  "3 Set the attribute on the product": {
+    "version": 11,
+    "actions": [
+      {
+        "action": "setAttributeInAllVariants",
+        "name": "pants-1-returns-policy",
+        "value": {
+          "typeId": "key-value-document",
+          "id": "e458b22b-a77c-46dc-a65a-6af1f609e691"
+        }
+      }
+    ]
   }
 }
